@@ -1,14 +1,14 @@
 [
   {
     "name": "Demand job in 2021",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "description": "A mobile app that will send you notifications."
   },
   {
     "name": "The Ultimate Tech Quiz",
     "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "name": "Interview prep",
+    "description": "A mobile app that will help you prep you for your next interview."
   }
 ]

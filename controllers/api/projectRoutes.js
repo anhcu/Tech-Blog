@@ -15,6 +15,24 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.put('/:id', withAuth, async (req,res) => {
+  res.render('editpage');
+  try {
+    const projectData = await Project.update({
+      where : {
+        id: req.params.id
+      },
+  } );
+  if (projectData >0 )  {
+    res.status(200).end();
+  } else {
+    res.status(404).json({ message: 'No project found with this id!' });
+  
+  } }catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({
