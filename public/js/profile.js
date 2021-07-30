@@ -39,27 +39,28 @@ const newFormHandler = async (event) => {
   //create an edit form handler 
   const editButtonHandler = async (event)=> {
     event.preventDefault();
+    const id = event.target.getAttribute('data-id');
+    const theId= document.querySelector('input[name="project-id"]').value;
 
-
-    const theTitle = document.querySelector('input[name="project-name"]');
-    const thePost = document.querySelector('textarea[name="project-body"]');
-
-    await fetch(`/api/projects/${id}`, {
+    const name = document.querySelector('input[id="p.name"]').value;
+    const description = document.querySelector('textarea[id="p.description"]').value;
+    console.log("this is the id    " + id + "  " + name + "  " + theId + "   " + description)
+    await fetch(`/api/projects/${theId}`, {
       method: 'PUT',
       body: JSON.stringify({
-        theTitle,
-        thePost
+        name, 
+        description
       }),
       headers: {
         'Content-Type': 'application/json',
       }
     })
-
-    document.location.replace('/profile');
-  }
+   
+  };
+  
   document
     .querySelector('.new-project-form')
-    .addEventListener('submit', newFormHandler);
+    .addEventListener('click', newFormHandler);
   
   document
     .querySelector('.project-list')
@@ -69,4 +70,4 @@ const newFormHandler = async (event) => {
 
   document
     .querySelector('#edit-form')
-    .addEventListener('click', editButtonHandler)
+    .addEventListener('submit', editButtonHandler)
