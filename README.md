@@ -1,6 +1,6 @@
 # Tech Blog
 Link to Tech Blog [Github](https://github.com/anhcu/Tech-Blog)<br>
-Link to Tech Blog [Heroku](#)
+Link to Tech Blog [Heroku](https://geeky-blogger.herokuapp.com/)
 
 # Description 
 
