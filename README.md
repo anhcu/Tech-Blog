@@ -1,5 +1,5 @@
 # Tech Blog
-Link to Tech Blog [Github](https://anhcu.github.io/Tech-Blog/)<br>
+Link to Tech Blog [Github](https://github.com/anhcu/Tech-Blog)<br>
 Link to Tech Blog [Heroku](#)
 
 # Description
