@@ -11,7 +11,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-
+ 
   for (const project of projectData) {
     await Project.create({
       ...project,

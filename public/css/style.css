@@ -9,7 +9,7 @@ body{
 .display-flex{
   background-color: 	#d3d3d3
 }
-
+ 
 header, .project:not(:last-child), 
 .container-project,.form-group, .row{
   color: white;

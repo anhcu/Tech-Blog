@@ -2,7 +2,7 @@
 Link to Tech Blog [Github](https://github.com/anhcu/Tech-Blog)<br>
 Link to Tech Blog [Heroku](#)
 
-# Description
+# Description 
 
 Tech Bloger is an application where a blogger can express their ideas freely. This application allows a blogger to view,  enter , save, update and delete their blogg.  
 
